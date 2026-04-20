@@ -120,15 +120,20 @@ document.addEventListener('click', () => {
    ============================================================ */
 const hamburger = document.getElementById('nav-hamburger');
 const navOverlay = document.getElementById('nav-overlay');
+const navBackdrop = document.getElementById('nav-backdrop');
 const overlayClose = document.getElementById('overlay-close');
 
 function openMobileNav() {
   navOverlay?.classList.add('open');
+  navBackdrop?.classList.add('open');
+  hamburger?.setAttribute('aria-expanded', 'true');
   document.body.style.overflow = 'hidden';
 }
 
 function closeMobileNav() {
   navOverlay?.classList.remove('open');
+  navBackdrop?.classList.remove('open');
+  hamburger?.setAttribute('aria-expanded', 'false');
   document.body.style.overflow = '';
 }
 
@@ -136,6 +141,7 @@ hamburger?.addEventListener('click', () => {
   navOverlay?.classList.contains('open') ? closeMobileNav() : openMobileNav();
 });
 overlayClose?.addEventListener('click', closeMobileNav);
+navBackdrop?.addEventListener('click', closeMobileNav);
 
 navOverlay?.querySelectorAll('a').forEach(a => {
   a.addEventListener('click', closeMobileNav);
