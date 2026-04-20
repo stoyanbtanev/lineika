@@ -7,8 +7,8 @@
 
   <!-- Primary Meta -->
   <title>Линейки Хигиа — Медицински транспорт в цяла Европа</title>
-  <meta name="description" content="Частни линейки Хигиа — Медицински транспорт на болни в страната и чужбина. Денонощно, нови оборудвани линейки, квалифициран медицински екип. Ниски цени." />
-  <meta name="keywords" content="линейки, медицински транспорт, частна линейка, Пловдив, България, Европа" />
+  <meta name="description" content="Частна линейка Пловдив — медицински транспорт 24/7 из цяла България и Европа. Обадете се на +359 89 338 3333." />
+  <meta name="keywords" content="частна линейка, медицински транспорт, линейка Пловдив, линейка България" />
   <meta name="author" content="Линейки Хигиа" />
 
   <!-- Open Graph -->
@@ -16,7 +16,9 @@
   <meta property="og:url" content="https://lineika-higia.com/" />
   <meta property="og:title" content="Линейки Хигиа — Медицински транспорт в цяла Европа" />
   <meta property="og:description" content="Денонощен медицински транспорт в страната и чужбина. Нови оборудвани линейки, квалифициран екип, ниски цени." />
-  <meta property="og:image" content="images_final/img_001.jpg" />
+  <meta property="og:image" content="https://lineika-higia.com/images_final/img_001.jpg" />
+
+  <link rel="canonical" href="https://lineika-higia.com/" />
 
   <!-- Hreflang for 5 languages -->
   <link rel="alternate" hreflang="bg" href="https://lineika-higia.com/?lang=bg" />
@@ -38,21 +40,30 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
+    "@type": ["LocalBusiness", "MedicalBusiness"],
     "name": "Линейки Хигиа",
     "alternateName": "Lineika Higia",
     "url": "https://lineika-higia.com",
     "telephone": "+359893383333",
     "email": "higia176@gmail.com",
+    "logo": "https://lineika-higia.com/images_final/logo.png",
+    "image": "https://lineika-higia.com/images_final/img_001.jpg",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "гр. Пловдив",
       "addressLocality": "Пловдив",
+      "addressRegion": "Пловдивска област",
       "addressCountry": "BG"
     },
     "openingHours": "Mo-Su 00:00-24:00",
-    "description": "Частни линейки и медицински транспорт в страната и чужбина.",
-    "areaServed": ["Bulgaria", "Europe", "Turkey"],
-    "medicalSpecialty": "Emergency"
+    "description": "Частна линейка Пловдив — медицински транспорт 24/7 из цяла България и Европа.",
+    "areaServed": [
+      { "@type": "Country", "name": "Bulgaria" },
+      { "@type": "Continent", "name": "Europe" },
+      { "@type": "Country", "name": "Turkey" }
+    ],
+    "medicalSpecialty": "Emergency",
+    "priceRange": "$$"
   }
   </script>
 </head>
@@ -66,8 +77,7 @@
 
     <!-- Logo -->
     <a href="#hero" class="nav__logo" aria-label="Линейки Хигиа — На начало">
-      <div class="nav__logo-icon" aria-hidden="true">🚑</div>
-      <span>Хигиа</span>
+      <img src="images_final/logo.png" alt="Линейки Хигиа" class="nav__logo-img" width="160" height="42" />
     </a>
 
     <!-- Desktop Nav Links -->
@@ -76,6 +86,7 @@
       <li><a href="#how" data-i18n="nav_how">Как работим</a></li>
       <li><a href="#fleet" data-i18n="nav_fleet">Нашите линейки</a></li>
       <li><a href="#international" data-i18n="nav_international">Международен транспорт</a></li>
+      <li><a href="#about">За нас</a></li>
       <li><a href="#contact" data-i18n="nav_contact">Контакти</a></li>
     </ul>
 
@@ -122,6 +133,7 @@
   <a href="#how" data-i18n="nav_how">Как работим</a>
   <a href="#fleet" data-i18n="nav_fleet">Нашите линейки</a>
   <a href="#international" data-i18n="nav_international">Международен транспорт</a>
+  <a href="#about">За нас</a>
   <a href="#contact" data-i18n="nav_contact">Контакти</a>
   <a href="tel:+359893383333" class="btn btn-primary" style="margin-top:1rem;" data-i18n="hero_cta_primary">📞 Обади се сега</a>
 </div>
@@ -247,6 +259,33 @@
 </div>
 
 <!-- ============================================================
+     STATS BAR
+     ============================================================ -->
+<div class="stats-bar" aria-label="Ключови показатели">
+  <div class="container">
+    <div class="stats-bar__grid">
+      <div class="stats-bar__item">
+        <span class="stats-bar__icon" aria-hidden="true">🏆</span>
+        <span class="stats-bar__number">15+</span>
+        <span class="stats-bar__label">години опит</span>
+      </div>
+      <div class="stats-bar__divider" aria-hidden="true"></div>
+      <div class="stats-bar__item">
+        <span class="stats-bar__icon" aria-hidden="true">🕐</span>
+        <span class="stats-bar__number">24/7</span>
+        <span class="stats-bar__label">на разположение</span>
+      </div>
+      <div class="stats-bar__divider" aria-hidden="true"></div>
+      <div class="stats-bar__item">
+        <span class="stats-bar__icon" aria-hidden="true">❤️</span>
+        <span class="stats-bar__number">1000+</span>
+        <span class="stats-bar__label">пациента</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
      SERVICES
      ============================================================ -->
 <section id="services" class="section" aria-labelledby="services-heading">
@@ -263,42 +302,42 @@
         <div class="service-card__icon" aria-hidden="true">🚑</div>
         <h3 data-i18n="svc1_title">Медицински транспорт</h3>
         <p data-i18n="svc1_desc">От легло до легло — в страната от град до град, и от/до всяка точка на Европа с нови, напълно оборудвани линейки.</p>
-        <a href="#contact" class="service-card__link" data-i18n="svc1_link">Научи повече →</a>
+        <button class="service-card__btn" onclick="openModal('modal-svc1')" aria-haspopup="dialog">Научи повече →</button>
       </article>
 
       <article class="service-card reveal reveal-delay-2">
         <div class="service-card__icon" aria-hidden="true">🏠</div>
         <h3 data-i18n="svc2_title">Домашни посещения</h3>
         <p data-i18n="svc2_desc">Неотложна помощ, прегледи в дома, манипулации — смяна на катетър, превръзки, инжекции и поставяне на системи.</p>
-        <a href="#contact" class="service-card__link" data-i18n="svc2_link">Научи повече →</a>
+        <button class="service-card__btn" onclick="openModal('modal-svc2')" aria-haspopup="dialog">Научи повече →</button>
       </article>
 
       <article class="service-card reveal reveal-delay-3">
         <div class="service-card__icon" aria-hidden="true">🌍</div>
         <h3 data-i18n="svc3_title">Международен транспорт</h3>
         <p data-i18n="svc3_desc">Транспорт от България до Европа и обратно. до Турция, опитни екипи с международен опит и напълно оборудвани реанимобили.</p>
-        <a href="#contact" class="service-card__link" data-i18n="svc3_link">Научи повече →</a>
+        <button class="service-card__btn" onclick="openModal('modal-svc3')" aria-haspopup="dialog">Научи повече →</button>
       </article>
 
       <article class="service-card reveal reveal-delay-4">
         <div class="service-card__icon" aria-hidden="true">💊</div>
         <h3 data-i18n="svc4_title">Частна линейка</h3>
         <p data-i18n="svc4_desc">Болничен транспорт от легло до легло без скрити такси. Специализирано лице и шофьор за безпроблемно транспортиране.</p>
-        <a href="#contact" class="service-card__link" data-i18n="svc4_link">Научи повече →</a>
+        <button class="service-card__btn" onclick="openModal('modal-svc4')" aria-haspopup="dialog">Научи повече →</button>
       </article>
 
       <article class="service-card reveal reveal-delay-5">
         <div class="service-card__icon" aria-hidden="true">🩺</div>
         <h3 data-i18n="svc5_title">Медицинско осигуряване</h3>
         <p data-i18n="svc5_desc">Медицинско осигуряване на зелени училища, спортни, концертни и масови прояви с медицински екипи и линейка.</p>
-        <a href="#contact" class="service-card__link" data-i18n="svc5_link">Научи повече →</a>
+        <button class="service-card__btn" onclick="openModal('modal-svc5')" aria-haspopup="dialog">Научи повече →</button>
       </article>
 
       <article class="service-card reveal reveal-delay-1">
         <div class="service-card__icon" aria-hidden="true">⚕️</div>
         <h3 data-i18n="svc6_title">Дежурен медицински екип</h3>
         <p data-i18n="svc6_desc">Организиране на дежурен медицински контрол и кардиологичен екип при спортни състезания и корпоративни приеми.</p>
-        <a href="#contact" class="service-card__link" data-i18n="svc6_link">Научи повече →</a>
+        <button class="service-card__btn" onclick="openModal('modal-svc6')" aria-haspopup="dialog">Научи повече →</button>
       </article>
 
     </div>
@@ -331,6 +370,99 @@
         <div class="how__step-num" aria-hidden="true">3</div>
         <h3 data-i18n="step3_title">Грижим се за пациента</h3>
         <p data-i18n="step3_desc">Транспортираме безопасно и комфортно до дестинацията с пълна медицинска грижа по пътя.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TESTIMONIALS
+     ============================================================ -->
+<section id="testimonials" class="section section--alt" aria-labelledby="testimonials-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="eyebrow">Отзиви на клиенти</p>
+      <h2 id="testimonials-heading">Какво казват пациентите</h2>
+      <p>Оценени с <strong>4.5 ⭐ в Google Reviews</strong> от стотици доволни пациенти.</p>
+    </div>
+    <div class="testimonials__carousel" role="region" aria-label="Отзиви на клиенти" aria-live="polite">
+      <div class="testimonials__track" id="testimonials-track">
+
+        <article class="testimonial-card">
+          <div class="testimonial-card__stars" aria-label="5 от 5 звезди">⭐⭐⭐⭐⭐</div>
+          <blockquote>
+            <p>"Изключително бърза реакция и много грижовен персонал. Транспортирахме баща ми от Пловдив до Виена без никакви проблеми. Препоръчвам горещо!"</p>
+          </blockquote>
+          <footer class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">М</div>
+            <div>
+              <strong>Мария Петрова</strong>
+              <span>Пловдив</span>
+            </div>
+          </footer>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-card__stars" aria-label="5 от 5 звезди">⭐⭐⭐⭐⭐</div>
+          <blockquote>
+            <p>"Използвахме услугите на Хигиа за транспорт от болница до домашен адрес. Екипът беше изключително внимателен и професионален. Благодаря!"</p>
+          </blockquote>
+          <footer class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">Г</div>
+            <div>
+              <strong>Георги Николов</strong>
+              <span>Пазарджик</span>
+            </div>
+          </footer>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-card__stars" aria-label="5 от 5 звезди">⭐⭐⭐⭐⭐</div>
+          <blockquote>
+            <p>"Обадих се в 2 часа нощем и за по-малко от час линейката беше при нас. Персоналът се отнесе с майка ми с изключително внимание и уважение."</p>
+          </blockquote>
+          <footer class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">Е</div>
+            <div>
+              <strong>Елена Стоянова</strong>
+              <span>Пловдив</span>
+            </div>
+          </footer>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-card__stars" aria-label="5 от 5 звезди">⭐⭐⭐⭐⭐</div>
+          <blockquote>
+            <p>"Транспортирахме дядо ми за лъчетерапия всяка седмица в продължение на месец. Всеки път пунктуални, грижовни и с усмивка. Много сме доволни!"</p>
+          </blockquote>
+          <footer class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">Д</div>
+            <div>
+              <strong>Димитър Христов</strong>
+              <span>Асеновград</span>
+            </div>
+          </footer>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-card__stars" aria-label="5 от 5 звезди">⭐⭐⭐⭐⭐</div>
+          <blockquote>
+            <p>"Ползвам услугите на Хигиа вече над година за редовни медицински транспорти. Цените са справедливи, а качеството е на топ ниво. Браво!"</p>
+          </blockquote>
+          <footer class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">К</div>
+            <div>
+              <strong>Красимира Иванова</strong>
+              <span>Пловдив</span>
+            </div>
+          </footer>
+        </article>
+
+      </div>
+      <div class="testimonials__controls">
+        <button class="testimonials__btn" id="testimonials-prev" aria-label="Предишен отзив">‹</button>
+        <div class="testimonials__dots" id="testimonials-dots" role="tablist" aria-label="Навигация на отзиви"></div>
+        <button class="testimonials__btn" id="testimonials-next" aria-label="Следващ отзив">›</button>
       </div>
     </div>
   </div>
@@ -505,6 +637,78 @@
 </section>
 
 <!-- ============================================================
+     ABOUT US
+     ============================================================ -->
+<section id="about" class="section section--alt" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="eyebrow">За нас</p>
+      <h2 id="about-heading">Линейки Хигиа — кои сме ние</h2>
+      <p>Над 15 години опит в медицинския транспорт — грижа за всеки пациент.</p>
+    </div>
+
+    <div class="about__grid reveal">
+      <div class="about__text">
+        <h3>Нашата история</h3>
+        <p>Линейки Хигиа е основана с мисията да осигури достъпен, надежден и хуманен медицински транспорт за хора в нужда. Започнахме дейността си в Пловдив и за повече от 15 години изградихме репутация на доверен партньор за стотици семейства.</p>
+        <p style="margin-top:1rem">Днес обслужваме пациенти в цяла България и предлагаме международен транспорт до Европа и Турция. Ценностите ни са прости: бързина, грижа и уважение към всеки пациент.</p>
+      </div>
+      <div class="about__fleet-info">
+        <h3>Нашите линейки</h3>
+        <p>Разполагаме с нови, напълно оборудвани линейки и реанимобили. Всеки автомобил е оборудван с кислород, носилка, кресло-количка и пълен комплект медицинска апаратура.</p>
+        <div class="about__fleet-photos">
+          <div class="about__fleet-photo" aria-label="Снимка на линейка">
+            <span aria-hidden="true">🚑</span><small>Линейка 1</small>
+          </div>
+          <div class="about__fleet-photo" aria-label="Снимка на линейка">
+            <span aria-hidden="true">🚑</span><small>Линейка 2</small>
+          </div>
+          <div class="about__fleet-photo" aria-label="Снимка на реанимобил">
+            <span aria-hidden="true">🚑</span><small>Реанимобил</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about__team reveal">
+      <h3 class="about__sub-heading">Нашият екип</h3>
+      <div class="about__team-grid">
+        <div class="team-card">
+          <div class="team-card__photo" aria-hidden="true">👨‍⚕️</div>
+          <h4>Д-р Иван Стоянов</h4>
+          <p>Главен лекар</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card__photo" aria-hidden="true">👩‍⚕️</div>
+          <h4>Мед. сестра Елена</h4>
+          <p>Медицинска сестра</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card__photo" aria-hidden="true">👨‍⚕️</div>
+          <h4>Петър Димитров</h4>
+          <p>Шофьор-санитар</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card__photo" aria-hidden="true">👩‍⚕️</div>
+          <h4>Мед. сестра Мария</h4>
+          <p>Медицинска сестра</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about__certs reveal">
+      <h3 class="about__sub-heading">Акредитации и лицензи</h3>
+      <div class="about__certs-grid">
+        <div class="cert-badge"><span aria-hidden="true">📋</span><small>Лиценз МЗ</small></div>
+        <div class="cert-badge"><span aria-hidden="true">🏅</span><small>ISO 9001</small></div>
+        <div class="cert-badge"><span aria-hidden="true">✅</span><small>РЗОК Договор</small></div>
+        <div class="cert-badge"><span aria-hidden="true">🌍</span><small>Европейски стандарт</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
      EMERGENCY BANNER
      ============================================================ -->
 <section class="section-emergency" aria-label="Emergency contact">
@@ -515,6 +719,58 @@
       <a href="tel:+359893383333" class="btn btn-secondary btn-lg" data-i18n="emergency_cta">📞 Обади се сега</a>
       <a href="#contact" class="btn btn-secondary btn-lg" data-i18n="emergency_alt">или попълнете формата</a>
     </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PARTNERS
+     ============================================================ -->
+<div class="partners-strip" aria-label="Застрахователни партньори">
+  <div class="container">
+    <p class="partners-strip__label">Работим с всички застрахователни компании</p>
+    <div class="partners-strip__scroll" aria-hidden="true">
+      <div class="partners-strip__track">
+        <div class="partner-logo">ДЗИ</div>
+        <div class="partner-logo">Лев Инс</div>
+        <div class="partner-logo">Алианц</div>
+        <div class="partner-logo">Булстрад</div>
+        <div class="partner-logo">Армеец</div>
+        <div class="partner-logo">Групама</div>
+        <div class="partner-logo">ОЗК</div>
+        <div class="partner-logo">Евроинс</div>
+        <div class="partner-logo">ДЗИ</div>
+        <div class="partner-logo">Лев Инс</div>
+        <div class="partner-logo">Алианц</div>
+        <div class="partner-logo">Булстрад</div>
+        <div class="partner-logo">Армеец</div>
+        <div class="partner-logo">Групама</div>
+        <div class="partner-logo">ОЗК</div>
+        <div class="partner-logo">Евроинс</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     COVERAGE MAP
+     ============================================================ -->
+<section id="coverage" class="section-map" aria-labelledby="map-heading">
+  <div class="container section-map__header">
+    <p class="eyebrow">Зона на покритие</p>
+    <h2 id="map-heading">Пловдив и цяла България</h2>
+    <p>Предоставяме услуги в цяла България, Европа и Турция. Обаждайте се от всяка точка на страната.</p>
+  </div>
+  <div class="section-map__iframe">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94081.46824741682!2d24.713504!3d42.143962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14acd11aa0a82d51%3A0x44e3c52c30c4a57c!2sPlovdiv%2C%20Bulgaria!5e0!3m2!1sen!2sbg!4v1700000000000"
+      width="100%"
+      height="450"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Зона на покритие — Пловдив и цяла България"
+    ></iframe>
   </div>
 </section>
 
@@ -626,8 +882,7 @@
       <!-- Brand -->
       <div class="footer__brand">
         <a href="#hero" class="nav__logo" style="margin-bottom:0.5rem; display:inline-flex;">
-          <div class="nav__logo-icon" aria-hidden="true">🚑</div>
-          <span>Линейки Хигиа</span>
+          <img src="images_final/logo.png" alt="Линейки Хигиа" class="nav__logo-img nav__logo-img--footer" width="196" height="52" />
         </a>
         <p data-i18n="footer_tagline">Денонощен медицински транспорт в страната и чужбина.</p>
       </div>
@@ -648,7 +903,7 @@
         <h4 data-i18n="footer_company">Компания</h4>
         <ul>
           <li><a href="#hero" data-i18n="footer_home">Начало</a></li>
-          <li><a href="#why" data-i18n="footer_about">За нас</a></li>
+          <li><a href="#about" data-i18n="footer_about">За нас</a></li>
           <li><a href="#fleet" data-i18n="footer_gallery">Галерия</a></li>
         </ul>
       </div>
@@ -678,6 +933,163 @@
   <span aria-hidden="true">📞</span>
   <span data-i18n="nav_call">Обади се</span>
 </a>
+
+<!-- ============================================================
+     MOBILE STICKY CTA BAR
+     ============================================================ -->
+<div class="mobile-cta-bar" aria-label="Бърз контакт" role="complementary">
+  <a href="tel:+359893383333" class="mobile-cta-bar__call" aria-label="Обади се сега — +359 89 338 3333">
+    <span aria-hidden="true">📞</span>
+    <span>Обади се сега</span>
+  </a>
+  <div class="mobile-cta-bar__icons">
+    <a href="https://wa.me/359893383333" class="mobile-cta-bar__icon" aria-label="Пиши ни в WhatsApp" target="_blank" rel="noopener noreferrer">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <a href="viber://chat?number=%2B359893383333" class="mobile-cta-bar__icon" aria-label="Пиши ни в Viber" target="_blank" rel="noopener noreferrer">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.4 0C7.4.3 3.9 2.5 1.8 5.9 0 8.7-.4 12.2.4 15.4l.1.4v5.5c0 .5.4.9.9.9h5.5l.4.1c2.3.7 4.8.7 7.1 0 3.5-1.1 6.3-3.8 7.3-7.4 1.4-5.1-.9-10.5-5.5-13.2C14.5.5 12.9.1 11.4 0zm.3 2.2c1.2.1 2.4.4 3.5.9 4.1 2.1 6.2 6.8 5 11.2-.9 3.1-3.4 5.5-6.5 6.3-2.1.6-4.4.5-6.5-.2l-.6-.2H2.4v-4.8l-.2-.6C1 12.9 1.6 9.3 3.7 6.7c1.9-2.4 4.8-4 7.9-4.3.1-.2.1-.2.1-.2zm2.5 4.2c-.2 0-.4.1-.5.2-.6.5-.6 1.4-.1 1.9.9.9 1.3 2.1 1.1 3.3 0 .2.1.4.2.5.3.3.8.3 1.1 0 .2-.2.3-.4.2-.7.2-1.8-.4-3.5-1.6-4.7-.2-.3-.3-.5-.4-.5zm-3.5.3c-2.5.8-4 3.4-3.4 6 .2.7.5 1.3.9 1.9.4.5 1.1.6 1.6.2.5-.4.6-1.1.2-1.6-.6-.9-.8-2-.4-3 .3-.8.8-1.4 1.5-1.7.6-.2.9-.9.7-1.5-.2-.5-.7-.7-1.1-.3zm1.6 2.7c-.6.2-.9.8-.8 1.4.1.2.1.4.3.5.4.6.4 1.3 0 1.8-.3.4-.2 1 .2 1.3.4.3.9.2 1.2-.2.8-1.1.8-2.6 0-3.7-.3-.5-.5-.9-.9-1.1zm-1.2 4c-.6 0-1.1.4-1.2.9-.2.6.1 1.2.7 1.4.5.2 1.1-.1 1.3-.6.2-.6-.1-1.2-.6-1.5-.1-.1-.2-.2-.2-.2z"/></svg>
+    </a>
+  </div>
+</div>
+
+<!-- ============================================================
+     SERVICE MODALS
+     ============================================================ -->
+
+<div id="modal-svc1" class="svc-modal" role="dialog" aria-modal="true" aria-labelledby="modal-svc1-title" hidden>
+  <div class="svc-modal__overlay" onclick="closeModal('modal-svc1')"></div>
+  <div class="svc-modal__content">
+    <button class="svc-modal__close" onclick="closeModal('modal-svc1')" aria-label="Затвори">✕</button>
+    <div class="svc-modal__icon" aria-hidden="true">🚑</div>
+    <h2 id="modal-svc1-title">Медицински транспорт</h2>
+    <p>От легло до легло — в страната от град до град и от/до всяка точка на Европа с нови, напълно оборудвани линейки и реанимобили.</p>
+    <h3>Включва</h3>
+    <ul>
+      <li>От дома до болницата и обратно</li>
+      <li>Вътреградски транспорт в Пловдив</li>
+      <li>Транспорт от болница до друго населено място</li>
+      <li>Транспорт за изследвания и ТЕЛК</li>
+      <li>Съдействие при настаняване в болница, хоспис, рехабилитация</li>
+      <li>Кислород и медицинско оборудване на борда</li>
+    </ul>
+    <h3>За кого е подходящо</h3>
+    <p>За болни и трудноподвижни пациенти, хора след операция, възрастни хора и пациенти с хронични заболявания.</p>
+    <a href="#contact" class="btn btn-primary btn-lg" onclick="closeModal('modal-svc1')">Заявете сега</a>
+  </div>
+</div>
+
+<div id="modal-svc2" class="svc-modal" role="dialog" aria-modal="true" aria-labelledby="modal-svc2-title" hidden>
+  <div class="svc-modal__overlay" onclick="closeModal('modal-svc2')"></div>
+  <div class="svc-modal__content">
+    <button class="svc-modal__close" onclick="closeModal('modal-svc2')" aria-label="Затвори">✕</button>
+    <div class="svc-modal__icon" aria-hidden="true">🏠</div>
+    <h2 id="modal-svc2-title">Домашни посещения</h2>
+    <p>Нашите медицински екипи посещават пациенти в домашни условия, предоставяйки качествена медицинска помощ без необходимост от напускане на дома.</p>
+    <h3>Включва</h3>
+    <ul>
+      <li>Неотложна медицинска помощ</li>
+      <li>Прегледи и консултации в дома</li>
+      <li>Смяна на катетър и превръзки</li>
+      <li>Поставяне на инжекции (мускулно и венозно)</li>
+      <li>Поставяне на интравенозна система</li>
+      <li>Обработка на рани</li>
+      <li>Сваляне и качване на пациенти от всякакъв етаж</li>
+    </ul>
+    <h3>За кого е подходящо</h3>
+    <p>За пациенти, които не могат да посещават лекар самостоятелно, възрастни и трудноподвижни хора, пациенти след операция.</p>
+    <a href="#contact" class="btn btn-primary btn-lg" onclick="closeModal('modal-svc2')">Заявете сега</a>
+  </div>
+</div>
+
+<div id="modal-svc3" class="svc-modal" role="dialog" aria-modal="true" aria-labelledby="modal-svc3-title" hidden>
+  <div class="svc-modal__overlay" onclick="closeModal('modal-svc3')"></div>
+  <div class="svc-modal__content">
+    <button class="svc-modal__close" onclick="closeModal('modal-svc3')" aria-label="Затвори">✕</button>
+    <div class="svc-modal__icon" aria-hidden="true">🌍</div>
+    <h2 id="modal-svc3-title">Международен транспорт</h2>
+    <p>Извършваме медицински транспорт от България до всяка точка на Европа и Турция с необходимата документация за преминаване на граници.</p>
+    <h3>Включва</h3>
+    <ul>
+      <li>Транспорт от България до всяка точка в Европа</li>
+      <li>Транспорт от Европа до България</li>
+      <li>Транспорт до и от Турция</li>
+      <li>Нови, напълно оборудвани реанимобили</li>
+      <li>Опитни висококвалифицирани медицински екипи</li>
+      <li>Пълно медицинско осигуряване по маршрута</li>
+      <li>Необходима документация и митнически формалности</li>
+    </ul>
+    <h3>За кого е подходящо</h3>
+    <p>За пациенти, лекуващи се в чужбина, репатриации, хора получили спешна помощ зад граница и транспорт за специализирано лечение в Европа.</p>
+    <a href="#contact" class="btn btn-primary btn-lg" onclick="closeModal('modal-svc3')">Заявете сега</a>
+  </div>
+</div>
+
+<div id="modal-svc4" class="svc-modal" role="dialog" aria-modal="true" aria-labelledby="modal-svc4-title" hidden>
+  <div class="svc-modal__overlay" onclick="closeModal('modal-svc4')"></div>
+  <div class="svc-modal__content">
+    <button class="svc-modal__close" onclick="closeModal('modal-svc4')" aria-label="Затвори">✕</button>
+    <div class="svc-modal__icon" aria-hidden="true">💊</div>
+    <h2 id="modal-svc4-title">Частна линейка</h2>
+    <p>Болничен транспорт от легло до легло без скрити такси. Работим на ниски цени в страната, Европа и Турция.</p>
+    <h3>Включва</h3>
+    <ul>
+      <li>Транспорт от легло до легло</li>
+      <li>Нови, модерни и напълно оборудвани линейки</li>
+      <li>Специализирано лице и шофьор</li>
+      <li>Кислород и медицинско оборудване</li>
+      <li>Носилка и кресло-количка</li>
+      <li>Без скрити такси</li>
+      <li>Работа с всички застрахователи</li>
+    </ul>
+    <h3>За кого е подходящо</h3>
+    <p>За всеки, нуждаещ се от бърз, надежден и комфортен болничен транспорт при планирани и спешни случаи.</p>
+    <a href="#contact" class="btn btn-primary btn-lg" onclick="closeModal('modal-svc4')">Заявете сега</a>
+  </div>
+</div>
+
+<div id="modal-svc5" class="svc-modal" role="dialog" aria-modal="true" aria-labelledby="modal-svc5-title" hidden>
+  <div class="svc-modal__overlay" onclick="closeModal('modal-svc5')"></div>
+  <div class="svc-modal__content">
+    <button class="svc-modal__close" onclick="closeModal('modal-svc5')" aria-label="Затвори">✕</button>
+    <div class="svc-modal__icon" aria-hidden="true">🩺</div>
+    <h2 id="modal-svc5-title">Медицинско осигуряване на прояви</h2>
+    <p>Осигуряваме медицинско присъствие на масови прояви, спортни и концертни събития с напълно оборудвана линейка и квалифициран медицински екип.</p>
+    <h3>Включва</h3>
+    <ul>
+      <li>Медицинско осигуряване на „зелени училища"</li>
+      <li>Спортни състезания и турнири</li>
+      <li>Концертни и филмови мероприятия</li>
+      <li>Корпоративни мероприятия</li>
+      <li>Масови прояви и фестивали</li>
+      <li>Постоянно дежурство по време на събитието</li>
+      <li>Линейка с пълно оборудване на място</li>
+    </ul>
+    <h3>За кого е подходящо</h3>
+    <p>За организатори на спортни и масови прояви, учебни заведения, концертни агенции и корпоративни клиенти.</p>
+    <a href="#contact" class="btn btn-primary btn-lg" onclick="closeModal('modal-svc5')">Заявете сега</a>
+  </div>
+</div>
+
+<div id="modal-svc6" class="svc-modal" role="dialog" aria-modal="true" aria-labelledby="modal-svc6-title" hidden>
+  <div class="svc-modal__overlay" onclick="closeModal('modal-svc6')"></div>
+  <div class="svc-modal__content">
+    <button class="svc-modal__close" onclick="closeModal('modal-svc6')" aria-label="Затвори">✕</button>
+    <div class="svc-modal__icon" aria-hidden="true">⚕️</div>
+    <h2 id="modal-svc6-title">Дежурен медицински екип</h2>
+    <p>Организираме дежурен медицински контрол и кардиологичен екип при спортни състезания и корпоративни приеми с пълна готовност за незабавна реакция.</p>
+    <h3>Включва</h3>
+    <ul>
+      <li>Дежурен лекар и медицинска сестра</li>
+      <li>Кардиологичен екип при нужда</li>
+      <li>Незабавна реакция при спешни случаи</li>
+      <li>Медицинска апаратура за наблюдение</li>
+      <li>Координация с ЦСМП при необходимост</li>
+    </ul>
+    <h3>За кого е подходящо</h3>
+    <p>За организатори на спортни надпревари, корпоративни приеми и компании с работници на повишен риск.</p>
+    <a href="#contact" class="btn btn-primary btn-lg" onclick="closeModal('modal-svc6')">Заявете сега</a>
+  </div>
+</div>
 
 <!-- ============================================================
      SCRIPTS

@@ -355,7 +355,152 @@ function initTrustMarquee() {
 }
 
 /* ============================================================
-   11. INIT ALL
+   11. SERVICE MODALS
+   ============================================================ */
+let _activeModal = null;
+let _prevFocus  = null;
+let _closingTimer = null;
+
+function openModal(id) {
+  const modal = document.getElementById(id);
+  if (!modal) return;
+  _prevFocus = document.activeElement;
+  _activeModal = modal;
+
+  modal.removeAttribute('hidden');
+  modal.classList.remove('is-closing');
+  modal.classList.add('is-open');
+  document.body.style.overflow = 'hidden';
+
+  const first = getFocusable(modal)[0];
+  if (first) first.focus();
+}
+
+function closeModal(id) {
+  const modal = document.getElementById(id) || _activeModal;
+  if (!modal) return;
+
+  modal.classList.remove('is-open');
+  modal.classList.add('is-closing');
+  document.body.style.overflow = '';
+  _activeModal = null;
+
+  clearTimeout(_closingTimer);
+  _closingTimer = setTimeout(() => {
+    modal.setAttribute('hidden', '');
+    modal.classList.remove('is-closing');
+    if (_prevFocus) { _prevFocus.focus(); _prevFocus = null; }
+  }, 220);
+}
+
+function getFocusable(el) {
+  return Array.from(el.querySelectorAll(
+    'a[href],button:not([disabled]),textarea,input,select,[tabindex]:not([tabindex="-1"])'
+  ));
+}
+
+function initModals() {
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && _activeModal) closeModal(_activeModal.id);
+
+    if (e.key === 'Tab' && _activeModal) {
+      const focusable = getFocusable(_activeModal);
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last  = focusable[focusable.length - 1];
+      if (e.shiftKey) {
+        if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+      } else {
+        if (document.activeElement === last)  { e.preventDefault(); first.focus(); }
+      }
+    }
+  });
+}
+
+/* ============================================================
+   12. TESTIMONIALS SLIDER
+   ============================================================ */
+function initTestimonialsSlider() {
+  const track   = document.getElementById('testimonials-track');
+  const dotsBox = document.getElementById('testimonials-dots');
+  const prevBtn = document.getElementById('testimonials-prev');
+  const nextBtn = document.getElementById('testimonials-next');
+  if (!track || !dotsBox) return;
+
+  const cards  = Array.from(track.children);
+  const total  = cards.length;
+  let current  = 0;
+  let perPage  = getPerPage();
+  let autoTimer = null;
+
+  function getPerPage() {
+    if (window.innerWidth <= 600) return 1;
+    if (window.innerWidth <= 900) return 2;
+    return 3;
+  }
+
+  function totalPages() { return Math.ceil(total / perPage); }
+
+  function buildDots() {
+    dotsBox.innerHTML = '';
+    for (let i = 0; i < totalPages(); i++) {
+      const btn = document.createElement('button');
+      btn.className = 'testimonials__dot' + (i === 0 ? ' active' : '');
+      btn.setAttribute('role', 'tab');
+      btn.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
+      btn.setAttribute('aria-label', `Отзив ${i + 1}`);
+      btn.addEventListener('click', () => goTo(i));
+      dotsBox.appendChild(btn);
+    }
+  }
+
+  function updateDots() {
+    Array.from(dotsBox.children).forEach((dot, i) => {
+      const active = i === current;
+      dot.className = 'testimonials__dot' + (active ? ' active' : '');
+      dot.setAttribute('aria-selected', active ? 'true' : 'false');
+    });
+  }
+
+  function goTo(page) {
+    const pages = totalPages();
+    current = ((page % pages) + pages) % pages;
+    const cardWidth = cards[0].offsetWidth;
+    const gap = parseInt(getComputedStyle(track).gap) || 0;
+    const offset = current * perPage * (cardWidth + gap);
+    track.style.transform = `translateX(-${offset}px)`;
+    updateDots();
+  }
+
+  function startAuto() {
+    stopAuto();
+    autoTimer = setInterval(() => goTo(current + 1), 5000);
+  }
+  function stopAuto() { clearInterval(autoTimer); }
+
+  if (prevBtn) prevBtn.addEventListener('click', () => { stopAuto(); goTo(current - 1); startAuto(); });
+  if (nextBtn) nextBtn.addEventListener('click', () => { stopAuto(); goTo(current + 1); startAuto(); });
+
+  track.addEventListener('mouseenter', stopAuto);
+  track.addEventListener('mouseleave', startAuto);
+
+  window.addEventListener('resize', () => {
+    const newPer = getPerPage();
+    if (newPer !== perPage) {
+      perPage = newPer;
+      current = 0;
+      buildDots();
+      goTo(0);
+    }
+  });
+
+  buildDots();
+  goTo(0);
+  startAuto();
+}
+
+/* ============================================================
+   13. INIT ALL
    ============================================================ */
 document.addEventListener('DOMContentLoaded', () => {
   initRevealAnimations();
@@ -366,4 +511,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
   initTrustMarquee();
   initLanguage();
+  initModals();
+  initTestimonialsSlider();
 });
