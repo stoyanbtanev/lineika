@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="bg" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Primary Meta -->
+  <title>Линейки Хигиа — Медицински транспорт в цяла Европа</title>
+  <meta name="description" content="Частни линейки Хигиа — Медицински транспорт на болни в страната и чужбина. Денонощно, нови оборудвани линейки, квалифициран медицински екип. Ниски цени." />
+  <meta name="keywords" content="линейки, медицински транспорт, частна линейка, Пловдив, България, Европа" />
+  <meta name="author" content="Линейки Хигиа" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lineika-higia.com/" />
+  <meta property="og:title" content="Линейки Хигиа — Медицински транспорт в цяла Европа" />
+  <meta property="og:description" content="Денонощен медицински транспорт в страната и чужбина. Нови оборудвани линейки, квалифициран екип, ниски цени." />
+  <meta property="og:image" content="images_final/img_001.jpg" />
+
+  <!-- Hreflang for 5 languages -->
+  <link rel="alternate" hreflang="bg" href="https://lineika-higia.com/?lang=bg" />
+  <link rel="alternate" hreflang="en" href="https://lineika-higia.com/?lang=en" />
+  <link rel="alternate" hreflang="de" href="https://lineika-higia.com/?lang=de" />
+  <link rel="alternate" hreflang="fr" href="https://lineika-higia.com/?lang=fr" />
+  <link rel="alternate" hreflang="es" href="https://lineika-higia.com/?lang=es" />
+  <link rel="alternate" hreflang="x-default" href="https://lineika-higia.com/" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Линейки Хигиа",
+    "alternateName": "Lineika Higia",
+    "url": "https://lineika-higia.com",
+    "telephone": "+359893383333",
+    "email": "higia176@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Пловдив",
+      "addressCountry": "BG"
+    },
+    "openingHours": "Mo-Su 00:00-24:00",
+    "description": "Частни линейки и медицински транспорт в страната и чужбина.",
+    "areaServed": ["Bulgaria", "Europe", "Turkey"],
+    "medicalSpecialty": "Emergency"
+  }
+  </script>
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav class="nav" role="navigation" aria-label="Main Navigation">
+  <div class="container nav__inner">
+
+    <!-- Logo -->
+    <a href="#hero" class="nav__logo" aria-label="Линейки Хигиа — На начало">
+      <div class="nav__logo-icon" aria-hidden="true">🚑</div>
+      <span>Хигиа</span>
+    </a>
+
+    <!-- Desktop Nav Links -->
+    <ul class="nav__links" role="list">
+      <li><a href="#services" data-i18n="nav_services">Услуги</a></li>
+      <li><a href="#how" data-i18n="nav_how">Как работим</a></li>
+      <li><a href="#fleet" data-i18n="nav_fleet">Нашите линейки</a></li>
+      <li><a href="#international" data-i18n="nav_international">Международен транспорт</a></li>
+      <li><a href="#contact" data-i18n="nav_contact">Контакти</a></li>
+    </ul>
+
+    <!-- Actions -->
+    <div class="nav__actions">
+      <!-- Language Selector -->
+      <div class="lang-select" role="navigation" aria-label="Language selector">
+        <button id="lang-btn" class="lang-btn" aria-haspopup="listbox" aria-label="Select language">
+          <span id="lang-btn-text">🇧🇬 BG</span>
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="lang-dropdown" role="listbox">
+          <button class="lang-option active" data-lang="bg" role="option" aria-selected="true">🇧🇬 Български</button>
+          <button class="lang-option" data-lang="en" role="option">🇬🇧 English</button>
+          <button class="lang-option" data-lang="de" role="option">🇩🇪 Deutsch</button>
+          <button class="lang-option" data-lang="fr" role="option">🇫🇷 Français</button>
+          <button class="lang-option" data-lang="es" role="option">🇪🇸 Español</button>
+        </div>
+      </div>
+
+      <!-- Theme Toggle -->
+      <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode">🌙</button>
+
+      <!-- CTA -->
+      <a href="#contact" class="btn btn-primary btn-sm" data-i18n="nav_call">Обади се</a>
+
+      <!-- Hamburger -->
+      <button id="nav-hamburger" class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Mobile Nav Overlay -->
+<div id="nav-overlay" class="nav-overlay" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <button id="overlay-close" class="nav-overlay__close" aria-label="Close menu">✕</button>
+  <a href="#services" data-i18n="nav_services">Услуги</a>
+  <a href="#how" data-i18n="nav_how">Как работим</a>
+  <a href="#fleet" data-i18n="nav_fleet">Нашите линейки</a>
+  <a href="#international" data-i18n="nav_international">Международен транспорт</a>
+  <a href="#contact" data-i18n="nav_contact">Контакти</a>
+  <a href="tel:+359893383333" class="btn btn-primary" style="margin-top:1rem;" data-i18n="hero_cta_primary">📞 Обади се сега</a>
+</div>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section id="hero" class="hero" aria-label="Hero section">
+  <div class="hero__bg" role="img" aria-label="Оборудвана линейка на Хигиа"></div>
+  <div class="hero__overlay"></div>
+
+  <div class="container">
+    <div class="hero__content">
+      <div class="hero__eyebrow">
+        <span class="dot" aria-hidden="true"></span>
+        <span data-i18n="hero_eyebrow">Линейки Хигиа — Пловдив</span>
+      </div>
+
+      <h1 data-i18n="hero_h1">Медицински транспорт, на когото можете да се доверите</h1>
+
+      <p class="hero__sub" data-i18n="hero_sub">
+        Денонощен транспорт на болни и трудноподвижни пациенти с напълно оборудвани линейки в цяла България, Европа и Турция.
+      </p>
+
+      <div class="hero__ctas">
+        <a href="tel:+359893383333" class="btn btn-primary btn-lg" data-i18n="hero_cta_primary">📞 Обади се сега</a>
+        <a href="#services" class="btn btn-secondary btn-lg" data-i18n="hero_cta_secondary">Разгледай услугите</a>
+      </div>
+
+      <div class="hero__phone">
+        <span data-i18n="hero_phone_label">Денонощна линия:</span>
+        <a href="tel:+359893383333" class="phone-display">+359 89 338 3333</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <div class="hero__scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TRUST BAR
+     ============================================================ -->
+<div class="trust-bar" aria-label="Trust indicators" role="complementary">
+  <!-- Row 1: Left moving -->
+  <div class="trust-bar__row trust-bar__row--left">
+    <div class="trust-bar__track" aria-hidden="true">
+      <span class="trust-item"><span class="icon">🕐</span><span data-i18n="trust_247">24/7 Денонощно</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">🚑</span><span data-i18n="trust_equipped">Ново оборудване</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">🌍</span><span data-i18n="trust_europe">Цяла Европа</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">💰</span><span data-i18n="trust_price">Ниски цени</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">👨‍⚕️</span><span data-i18n="trust_team">Квалифициран екип</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">📋</span><span data-i18n="trust_licensed">Лицензиран транспорт</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">💨</span><span data-i18n="trust_oxygen">Кислород на борда</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">🛏️</span><span data-i18n="trust_stretcher">Носилка и количка</span></span>
+      <span class="trust-separator"></span>
+      <!-- Duplicate for loop -->
+      <span class="trust-item"><span class="icon">🕐</span><span data-i18n="trust_247">24/7 Денонощно</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">🚑</span><span data-i18n="trust_equipped">Ново оборудване</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">🌍</span><span data-i18n="trust_europe">Цяла Европа</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">💰</span><span data-i18n="trust_price">Ниски цени</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">👨‍⚕️</span><span data-i18n="trust_team">Квалифициран екип</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">📋</span><span data-i18n="trust_licensed">Лицензиран транспорт</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">💨</span><span data-i18n="trust_oxygen">Кислород на борда</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">🛏️</span><span data-i18n="trust_stretcher">Носилка и количка</span></span>
+      <span class="trust-separator"></span>
+    </div>
+  </div>
+
+  <!-- Row 2: Right moving -->
+  <div class="trust-bar__row trust-bar__row--right">
+    <div class="trust-bar__track" aria-hidden="true">
+      <span class="trust-item"><span class="icon">📋</span><span data-i18n="trust_licensed">Лицензиран транспорт</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">👨‍⚕️</span><span data-i18n="trust_team">Квалифициран екип</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">🌍</span><span data-i18n="trust_europe">Цяла Европа</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">🚑</span><span data-i18n="trust_equipped">Ново оборудване</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">🕐</span><span data-i18n="trust_247">24/7 Денонощно</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">💨</span><span data-i18n="trust_oxygen">Кислород на борда</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">💰</span><span data-i18n="trust_price">Ниски цени</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">🛏️</span><span data-i18n="trust_stretcher">Носилка и количка</span></span>
+      <span class="trust-separator"></span>
+      <!-- Duplicate for loop -->
+      <span class="trust-item"><span class="icon">📋</span><span data-i18n="trust_licensed">Лицензиран транспорт</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">👨‍⚕️</span><span data-i18n="trust_team">Квалифициран екип</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">🌍</span><span data-i18n="trust_europe">Цяла Европа</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">🚑</span><span data-i18n="trust_equipped">Ново оборудване</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">🕐</span><span data-i18n="trust_247">24/7 Денонощно</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">💨</span><span data-i18n="trust_oxygen">Кислород на борда</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">💰</span><span data-i18n="trust_price">Ниски цени</span></span>
+      <span class="trust-separator"></span>
+      <span class="trust-item"><span class="icon">🛏️</span><span data-i18n="trust_stretcher">Носилка и количка</span></span>
+      <span class="trust-separator"></span>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     SERVICES
+     ============================================================ -->
+<section id="services" class="section" aria-labelledby="services-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="eyebrow" data-i18n="services_eyebrow">Нашите услуги</p>
+      <h2 id="services-heading" data-i18n="services_h2">Всичко, от което се нуждаете</h2>
+      <p data-i18n="services_sub">Пълен спектър от медицински транспортни услуги в страната и чужбина.</p>
+    </div>
+
+    <div class="services__grid">
+
+      <article class="service-card reveal reveal-delay-1">
+        <div class="service-card__icon" aria-hidden="true">🚑</div>
+        <h3 data-i18n="svc1_title">Медицински транспорт</h3>
+        <p data-i18n="svc1_desc">От легло до легло — в страната от град до град, и от/до всяка точка на Европа с нови, напълно оборудвани линейки.</p>
+        <a href="#contact" class="service-card__link" data-i18n="svc1_link">Научи повече →</a>
+      </article>
+
+      <article class="service-card reveal reveal-delay-2">
+        <div class="service-card__icon" aria-hidden="true">🏠</div>
+        <h3 data-i18n="svc2_title">Домашни посещения</h3>
+        <p data-i18n="svc2_desc">Неотложна помощ, прегледи в дома, манипулации — смяна на катетър, превръзки, инжекции и поставяне на системи.</p>
+        <a href="#contact" class="service-card__link" data-i18n="svc2_link">Научи повече →</a>
+      </article>
+
+      <article class="service-card reveal reveal-delay-3">
+        <div class="service-card__icon" aria-hidden="true">🌍</div>
+        <h3 data-i18n="svc3_title">Международен транспорт</h3>
+        <p data-i18n="svc3_desc">Транспорт от България до Европа и обратно. до Турция, опитни екипи с международен опит и напълно оборудвани реанимобили.</p>
+        <a href="#contact" class="service-card__link" data-i18n="svc3_link">Научи повече →</a>
+      </article>
+
+      <article class="service-card reveal reveal-delay-4">
+        <div class="service-card__icon" aria-hidden="true">💊</div>
+        <h3 data-i18n="svc4_title">Частна линейка</h3>
+        <p data-i18n="svc4_desc">Болничен транспорт от легло до легло без скрити такси. Специализирано лице и шофьор за безпроблемно транспортиране.</p>
+        <a href="#contact" class="service-card__link" data-i18n="svc4_link">Научи повече →</a>
+      </article>
+
+      <article class="service-card reveal reveal-delay-5">
+        <div class="service-card__icon" aria-hidden="true">🩺</div>
+        <h3 data-i18n="svc5_title">Медицинско осигуряване</h3>
+        <p data-i18n="svc5_desc">Медицинско осигуряване на зелени училища, спортни, концертни и масови прояви с медицински екипи и линейка.</p>
+        <a href="#contact" class="service-card__link" data-i18n="svc5_link">Научи повече →</a>
+      </article>
+
+      <article class="service-card reveal reveal-delay-1">
+        <div class="service-card__icon" aria-hidden="true">⚕️</div>
+        <h3 data-i18n="svc6_title">Дежурен медицински екип</h3>
+        <p data-i18n="svc6_desc">Организиране на дежурен медицински контрол и кардиологичен екип при спортни състезания и корпоративни приеми.</p>
+        <a href="#contact" class="service-card__link" data-i18n="svc6_link">Научи повече →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     HOW IT WORKS
+     ============================================================ -->
+<section id="how" class="section section--alt" aria-labelledby="how-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="eyebrow" data-i18n="how_eyebrow">Как работим</p>
+      <h2 id="how-heading" data-i18n="how_h2">Три стъпки до грижата</h2>
+      <p data-i18n="how_sub">Ние се грижим за всеки детайл, за да се чувствате сигурни и в добри ръце.</p>
+    </div>
+
+    <div class="how__steps">
+      <div class="how__step reveal reveal-delay-1">
+        <div class="how__step-num" aria-hidden="true">1</div>
+        <h3 data-i18n="step1_title">Свържете се с нас</h3>
+        <p data-i18n="step1_desc">Обадете се денонощно или попълнете формата. Нашият консултант оценява нуждите ви веднага.</p>
+      </div>
+      <div class="how__step reveal reveal-delay-2">
+        <div class="how__step-num" aria-hidden="true">2</div>
+        <h3 data-i18n="step2_title">Изпращаме екип</h3>
+        <p data-i18n="step2_desc">Квалифициран медицински екип с напълно оборудвана линейка пристига на посоченото място.</p>
+      </div>
+      <div class="how__step reveal reveal-delay-3">
+        <div class="how__step-num" aria-hidden="true">3</div>
+        <h3 data-i18n="step3_title">Грижим се за пациента</h3>
+        <p data-i18n="step3_desc">Транспортираме безопасно и комфортно до дестинацията с пълна медицинска грижа по пътя.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FLEET GALLERY
+     ============================================================ -->
+<section id="fleet" class="section" aria-labelledby="fleet-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="eyebrow" data-i18n="fleet_eyebrow">Нашият флот</p>
+      <h2 id="fleet-heading" data-i18n="fleet_h2">Нови и напълно оборудвани линейки</h2>
+      <p data-i18n="fleet_sub">Всички наши превозни средства са нови, модерни и разполагат с всичко необходимо за безпроблемното транспортиране.</p>
+    </div>
+
+    <div class="gallery__grid">
+      <div class="gallery__item reveal reveal-delay-1"><img src="images_final/img_001.jpg" alt="Линейка Хигиа 1" loading="lazy" /></div>
+      <div class="gallery__item reveal reveal-delay-2"><img src="images_final/img_004.jpg" alt="Линейка Хигиа 2" loading="lazy" /></div>
+      <div class="gallery__item reveal reveal-delay-3"><img src="images_final/img_007.jpg" alt="Линейка Хигиа 3" loading="lazy" /></div>
+      <div class="gallery__item reveal reveal-delay-4"><img src="images_final/img_010.jpg" alt="Оборудване на линейка" loading="lazy" /></div>
+      <div class="gallery__item reveal reveal-delay-5"><img src="images_final/img_011.jpg" alt="Медицинско оборудване" loading="lazy" /></div>
+      <div class="gallery__item reveal reveal-delay-1"><img src="images_final/img_012.jpg" alt="Линейка Хигиа интериор" loading="lazy" /></div>
+      <div class="gallery__item reveal reveal-delay-2"><img src="images_final/img_013.jpg" alt="Медицински транспорт" loading="lazy" /></div>
+      <div class="gallery__item reveal reveal-delay-3"><img src="images_final/img_014.jpg" alt="Линейка оборудване" loading="lazy" /></div>
+      <div class="gallery__item reveal reveal-delay-4"><img src="images_final/img_015.jpg" alt="Медицинско превозно средство" loading="lazy" /></div>
+      <div class="gallery__item reveal reveal-delay-5"><img src="images_final/img_016.jpg" alt="Линейка Хигиа екстериор" loading="lazy" /></div>
+      <div class="gallery__item reveal reveal-delay-1"><img src="images_final/img_017.jpg" alt="Реанимобил" loading="lazy" /></div>
+      <div class="gallery__item reveal reveal-delay-2"><img src="images_final/img_018.jpg" alt="Медицински транспорт България" loading="lazy" /></div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button id="lightbox-close" class="lightbox__close" aria-label="Close">✕</button>
+  <button id="lightbox-prev" class="lightbox__prev" aria-label="Previous image">‹</button>
+  <img id="lightbox-img" class="lightbox__img" src="" alt="" />
+  <button id="lightbox-next" class="lightbox__next" aria-label="Next image">›</button>
+</div>
+
+<!-- ============================================================
+     INTERNATIONAL
+     ============================================================ -->
+<section id="international" class="section international" aria-labelledby="intl-heading">
+  <div class="container">
+    <div class="international__inner">
+      <div class="international__text reveal">
+        <p class="eyebrow" data-i18n="intl_eyebrow">Международен транспорт</p>
+        <h2 id="intl-heading" data-i18n="intl_h2">Транспорт до всяка точка на Европа</h2>
+        <p data-i18n="intl_desc">Извършваме медицински транспорт от България до всяка точка на Европа и Турция. Нашите екипи имат богат международен опит.</p>
+
+        <ul class="route-list" aria-label="International routes">
+          <li class="route-item"><span class="check" aria-hidden="true">✓</span><span data-i18n="intl_route1">от България до всяка точка в Европа</span></li>
+          <li class="route-item"><span class="check" aria-hidden="true">✓</span><span data-i18n="intl_route2">от Европа до България</span></li>
+          <li class="route-item"><span class="check" aria-hidden="true">✓</span><span data-i18n="intl_route3">Транспорт до и от Турция</span></li>
+          <li class="route-item"><span class="check" aria-hidden="true">✓</span><span data-i18n="intl_route4">Нови, напълно оборудвани реанимобили</span></li>
+          <li class="route-item"><span class="check" aria-hidden="true">✓</span><span data-i18n="intl_route5">Опитни международни медицински екипи</span></li>
+        </ul>
+
+        <a href="#contact" class="btn btn-primary btn-lg" data-i18n="intl_cta">Заявете международен транспорт</a>
+      </div>
+
+      <!-- Europe SVG Map -->
+      <div class="europe-map reveal reveal-delay-3" aria-hidden="true">
+        <svg viewBox="0 0 500 420" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+              <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+
+          <!-- Simplified Europe outline -->
+          <g fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.2)" stroke-width="1">
+            <!-- Scandinavia -->
+            <path d="M230 30 L235 60 L220 90 L240 110 L250 85 L260 65 L255 35 Z"/>
+            <path d="M255 35 L275 45 L280 75 L265 95 L250 85 Z"/>
+            <!-- UK -->
+            <path d="M160 95 L175 80 L185 95 L175 120 L160 115 Z"/>
+            <path d="M160 125 L168 118 L172 130 L165 140 L158 132 Z"/>
+            <!-- France -->
+            <path d="M170 140 L195 130 L215 140 L220 165 L205 180 L185 175 L170 160 Z"/>
+            <!-- Spain -->
+            <path d="M170 185 L210 182 L225 195 L220 220 L200 230 L175 225 L165 205 Z"/>
+            <!-- Germany/Central -->
+            <path d="M215 115 L250 110 L260 130 L250 150 L225 155 L210 140 Z"/>
+            <!-- Italy -->
+            <path d="M205 180 L220 185 L225 200 L220 220 L210 235 L200 250 L195 230 L200 210 L198 190 Z"/>
+            <!-- Balkans -->
+            <path d="M250 155 L280 145 L295 165 L290 185 L270 195 L255 185 Z"/>
+            <!-- Poland/Romania -->
+            <path d="M255 110 L300 105 L315 130 L300 150 L280 145 L260 135 Z"/>
+            <!-- Greece -->
+            <path d="M260 195 L280 192 L285 210 L275 225 L260 220 Z"/>
+          </g>
+
+          <!-- Animated route lines from Bulgaria -->
+          <!-- Bulgaria dot -->
+          <circle cx="298" cy="175" r="8" fill="#EF4444" filter="url(#glow)">
+            <animate attributeName="r" values="6;10;6" dur="2s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="1;0.6;1" dur="2s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="298" cy="175" r="4" fill="#fff"/>
+
+          <!-- Route to Germany -->
+          <line x1="298" y1="175" x2="230" y2="130" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.7">
+            <animate attributeName="stroke-dashoffset" from="20" to="0" dur="1.5s" repeatCount="indefinite"/>
+          </line>
+          <!-- Route to France -->
+          <line x1="298" y1="175" x2="190" y2="155" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.5">
+            <animate attributeName="stroke-dashoffset" from="20" to="0" dur="2s" repeatCount="indefinite"/>
+          </line>
+          <!-- Route to Italy -->
+          <line x1="298" y1="175" x2="215" y2="195" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.5">
+            <animate attributeName="stroke-dashoffset" from="20" to="0" dur="1.8s" repeatCount="indefinite"/>
+          </line>
+          <!-- Route to Spain -->
+          <line x1="298" y1="175" x2="188" y2="205" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.4">
+            <animate attributeName="stroke-dashoffset" from="20" to="0" dur="2.3s" repeatCount="indefinite"/>
+          </line>
+          <!-- Route to Scandinavia -->
+          <line x1="298" y1="175" x2="248" y2="65" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.4">
+            <animate attributeName="stroke-dashoffset" from="20" to="0" dur="2.5s" repeatCount="indefinite"/>
+          </line>
+          <!-- Route to UK -->
+          <line x1="298" y1="175" x2="168" y2="105" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.35">
+            <animate attributeName="stroke-dashoffset" from="20" to="0" dur="2.8s" repeatCount="indefinite"/>
+          </line>
+
+          <!-- Label -->
+          <text x="298" y="198" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="10" font-family="Inter, sans-serif">България</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY US — Stats
+     ============================================================ -->
+<section id="why" class="section section--alt" aria-labelledby="why-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="eyebrow" data-i18n="why_eyebrow">Защо Хигиа</p>
+      <h2 id="why-heading" data-i18n="why_h2">На вашата страна, когато имате нужда</h2>
+    </div>
+
+    <div class="why__grid">
+      <div class="why-card reveal reveal-delay-1">
+        <span class="why-card__icon" aria-hidden="true">🕐</span>
+        <span class="why-card__number" data-target="24/7" aria-label="24/7">24/7</span>
+        <h4 data-i18n="why_label1">Денонощно</h4>
+      </div>
+      <div class="why-card reveal reveal-delay-2">
+        <span class="why-card__icon" aria-hidden="true">🚑</span>
+        <span class="why-card__number" data-target="100%" aria-label="100%">100%</span>
+        <h4 data-i18n="why_label2">Оборудвани линейки</h4>
+      </div>
+      <div class="why-card reveal reveal-delay-3">
+        <span class="why-card__icon" aria-hidden="true">🌍</span>
+        <span class="why-card__number" data-target="30+" aria-label="30+">30+</span>
+        <h4 data-i18n="why_label3">Страни в Европа</h4>
+      </div>
+      <div class="why-card reveal reveal-delay-4">
+        <span class="why-card__icon" aria-hidden="true">⭐</span>
+        <span class="why-card__number" data-target="10+" aria-label="10+">10+</span>
+        <h4 data-i18n="why_label4">Години опит</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     EMERGENCY BANNER
+     ============================================================ -->
+<section class="section-emergency" aria-label="Emergency contact">
+  <div class="container">
+    <h2 data-i18n="emergency_h2">Нуждаете се от спешна помощ?</h2>
+    <p data-i18n="emergency_desc">Нашата денонощна линия е винаги активна. Обадете се незабавно и ние ще изпратим екип към вас.</p>
+    <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+      <a href="tel:+359893383333" class="btn btn-secondary btn-lg" data-i18n="emergency_cta">📞 Обади се сега</a>
+      <a href="#contact" class="btn btn-secondary btn-lg" data-i18n="emergency_alt">или попълнете формата</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<section id="contact" class="section" aria-labelledby="contact-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="eyebrow" data-i18n="contact_eyebrow">Свържете се с нас</p>
+      <h2 id="contact-heading" data-i18n="contact_h2">Ние сме винаги с вас</h2>
+      <p data-i18n="contact_sub">Денонощно, без почивни дни. Обадете се или изпратете запитване.</p>
+    </div>
+
+    <div class="contact__inner">
+      <!-- Form -->
+      <form id="contact-form" class="contact__form reveal" novalidate aria-label="Contact form">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="f-name" data-i18n="form_name">Вашето име</label>
+            <input id="f-name" class="form-input" type="text" data-i18n="form_placeholder_name" placeholder="Иван Иванов" autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="f-phone" data-i18n="form_phone">Телефон</label>
+            <input id="f-phone" class="form-input" type="tel" data-i18n="form_placeholder_phone" placeholder="+359 88 123 4567" autocomplete="tel" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="f-from" data-i18n="form_from">От (адрес/място)</label>
+            <input id="f-from" class="form-input" type="text" data-i18n="form_placeholder_from" placeholder="Пловдив, ул. ..." />
+          </div>
+          <div class="form-group">
+            <label for="f-to" data-i18n="form_to">До (адрес/място)</label>
+            <input id="f-to" class="form-input" type="text" data-i18n="form_placeholder_to" placeholder="УМБАЛ Пловдив" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="f-date" data-i18n="form_date">Дата (ако е планирано)</label>
+          <input id="f-date" class="form-input" type="date" />
+        </div>
+
+        <div class="form-group">
+          <label for="f-msg" data-i18n="form_message">Допълнителна информация</label>
+          <textarea id="f-msg" class="form-textarea" data-i18n="form_placeholder_message" placeholder="Опишете ситуацията..." rows="5"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width:100%;" data-i18n="form_submit">Изпратете запитване</button>
+      </form>
+
+      <!-- Info -->
+      <div class="contact__info reveal reveal-delay-2">
+        <div class="contact-block">
+          <h3 data-i18n="contact_phone_title">Телефон</h3>
+          <div class="contact-item">
+            <span class="ci-icon">📞</span>
+            <a href="tel:+359893383333" class="phone-display">+359 89 338 3333</a>
+          </div>
+        </div>
+
+        <div class="contact-block">
+          <h3 data-i18n="contact_email_title">Имейл</h3>
+          <div class="contact-item">
+            <span class="ci-icon">✉️</span>
+            <a href="mailto:higia176@gmail.com" data-i18n="contact_email_val">higia176@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-block">
+          <h3 data-i18n="contact_address_title">Адрес</h3>
+          <div class="contact-item">
+            <span class="ci-icon">📍</span>
+            <span data-i18n="contact_address_val">Пловдив, България</span>
+          </div>
+        </div>
+
+        <div class="contact-block">
+          <h3 data-i18n="contact_hours_title">Работно време</h3>
+          <div class="contact-item">
+            <span class="ci-icon">🕐</span>
+            <span data-i18n="contact_hours_val">Денонощно, 7 дни в седмицата</span>
+          </div>
+        </div>
+
+        <!-- Map embed -->
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94081.46824741682!2d24.713504!3d42.143962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14acd11aa0a82d51%3A0x44e3c52c30c4a57c!2sPlovdiv%2C%20Bulgaria!5e0!3m2!1sen!2sbg!4v1700000000000"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Местоположение Пловдив"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <!-- Brand -->
+      <div class="footer__brand">
+        <a href="#hero" class="nav__logo" style="margin-bottom:0.5rem; display:inline-flex;">
+          <div class="nav__logo-icon" aria-hidden="true">🚑</div>
+          <span>Линейки Хигиа</span>
+        </a>
+        <p data-i18n="footer_tagline">Денонощен медицински транспорт в страната и чужбина.</p>
+      </div>
+
+      <!-- Services -->
+      <div class="footer__col">
+        <h4 data-i18n="footer_services">Услуги</h4>
+        <ul>
+          <li><a href="#services" data-i18n="svc1_title">Медицински транспорт</a></li>
+          <li><a href="#services" data-i18n="svc2_title">Домашни посещения</a></li>
+          <li><a href="#services" data-i18n="svc3_title">Международен транспорт</a></li>
+          <li><a href="#services" data-i18n="svc4_title">Частна линейка</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div class="footer__col">
+        <h4 data-i18n="footer_company">Компания</h4>
+        <ul>
+          <li><a href="#hero" data-i18n="footer_home">Начало</a></li>
+          <li><a href="#why" data-i18n="footer_about">За нас</a></li>
+          <li><a href="#fleet" data-i18n="footer_gallery">Галерия</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer__col">
+        <h4 data-i18n="footer_contact">Контакти</h4>
+        <ul>
+          <li><a href="tel:+359893383333">+359 89 338 3333</a></li>
+          <li><a href="mailto:higia176@gmail.com" data-i18n="contact_email_val">higia176@gmail.com</a></li>
+          <li><span data-i18n="contact_address_val">Пловдив, България</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span data-i18n="footer_rights">© 2025 Линейки Хигиа. Всички права запазени.</span>
+      <span data-i18n="footer_made">Медицински транспорт с грижа.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     FLOATING EMERGENCY BUTTON
+     ============================================================ -->
+<a href="tel:+359893383333" class="floating-cta" aria-label="Обади се сега — денонощна линия">
+  <span aria-hidden="true">📞</span>
+  <span data-i18n="nav_call">Обади се</span>
+</a>
+
+<!-- ============================================================
+     SCRIPTS
+     ============================================================ -->
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
