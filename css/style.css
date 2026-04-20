@@ -451,6 +451,27 @@ p  { color: var(--text-muted); line-height: 1.75; }
   transform: rotate(15deg) scale(1.05);
 }
 
+/* Nav messaging icons (desktop) */
+.nav__msg-icons {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+.nav__msg-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: transform var(--transition), filter var(--transition);
+  flex-shrink: 0;
+}
+.nav__msg-icon--wa { background: #25D366; }
+.nav__msg-icon--vb { background: #7360F2; }
+.nav__msg-icon:hover { transform: scale(1.12); filter: brightness(1.1); }
+
 /* Mobile hamburger */
 .nav__hamburger {
   display: none;
@@ -679,36 +700,6 @@ p  { color: var(--text-muted); line-height: 1.75; }
   color: #fff;
 }
 
-.hero__scroll {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-2);
-  color: rgba(255,255,255,0.5);
-  font-size: 0.75rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(6px); }
-}
-
-.hero__scroll-arrow {
-  width: 24px;
-  height: 24px;
-  border-right: 2px solid rgba(255,255,255,0.4);
-  border-bottom: 2px solid rgba(255,255,255,0.4);
-  transform: rotate(45deg);
-  margin-top: 2px;
-}
 
 /* ========================================================
    9. TRUST BAR (Marquee)
@@ -1396,8 +1387,8 @@ p  { color: var(--text-muted); line-height: 1.75; }
 
   .form-row { grid-template-columns: 1fr; }
 
-  .floating-cta span:last-child { display: none; }
-  .floating-cta { padding: 1rem; width: 56px; height: 56px; justify-content: center; font-size: 1.3rem; }
+  .floating-cta { display: none; }
+  .nav__msg-icons { display: none; }
 
   .hero__ctas { flex-direction: column; }
   .hero__ctas .btn { text-align: center; justify-content: center; width: 100%; }
