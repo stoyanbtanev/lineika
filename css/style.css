@@ -340,7 +340,7 @@ p  { color: var(--text-muted); line-height: 1.75; }
 .nav__links {
   display: flex;
   align-items: center;
-  gap: var(--space-5);
+  gap: var(--space-4);
 }
 
 .nav__links a {
@@ -349,6 +349,7 @@ p  { color: var(--text-muted); line-height: 1.75; }
   color: var(--text-muted);
   transition: color var(--transition);
   position: relative;
+  white-space: nowrap;
 }
 
 .nav__links a::after {
