@@ -25,7 +25,7 @@ function applyTheme(theme) {
 
 function initTheme() {
   const saved = localStorage.getItem(THEME_KEY);
-  applyTheme(saved || getSystemTheme());
+  applyTheme(saved || 'light');
 }
 
 function toggleTheme() {
@@ -132,7 +132,9 @@ function closeMobileNav() {
   document.body.style.overflow = '';
 }
 
-hamburger?.addEventListener('click', openMobileNav);
+hamburger?.addEventListener('click', () => {
+  navOverlay?.classList.contains('open') ? closeMobileNav() : openMobileNav();
+});
 overlayClose?.addEventListener('click', closeMobileNav);
 
 navOverlay?.querySelectorAll('a').forEach(a => {

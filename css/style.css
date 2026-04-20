@@ -471,7 +471,7 @@ p  { color: var(--text-muted); line-height: 1.75; }
 
 /* Mobile Nav Overlay */
 .nav-overlay {
-  display: none;
+  display: flex;
   position: fixed;
   inset: 0;
   z-index: 900;
@@ -481,12 +481,15 @@ p  { color: var(--text-muted); line-height: 1.75; }
   justify-content: center;
   gap: var(--space-8);
   opacity: 0;
-  transition: opacity var(--transition-slow);
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--transition-slow), visibility var(--transition-slow);
 }
 
 .nav-overlay.open {
-  display: flex;
   opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .nav-overlay a {
