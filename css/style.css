@@ -294,7 +294,7 @@ p  { color: var(--text-muted); line-height: 1.75; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--space-8);
+  gap: var(--space-4);
 }
 
 .nav__logo {
@@ -339,11 +339,11 @@ p  { color: var(--text-muted); line-height: 1.75; }
 .nav__links {
   display: flex;
   align-items: center;
-  gap: var(--space-8);
+  gap: var(--space-5);
 }
 
 .nav__links a {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 500;
   color: var(--text-muted);
   transition: color var(--transition);
@@ -491,7 +491,7 @@ p  { color: var(--text-muted); line-height: 1.75; }
 
 .nav-overlay a {
   font-family: var(--font-display);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--text);
   transition: color var(--transition);
@@ -500,13 +500,21 @@ p  { color: var(--text-muted); line-height: 1.75; }
 
 .nav-overlay__close {
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  font-size: 2rem;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
   color: var(--text-muted);
-  transition: color var(--transition);
+  transition: all var(--transition);
 }
-.nav-overlay__close:hover { color: var(--text); }
+.nav-overlay__close:hover { color: var(--text); background: var(--surface-3); }
 
 /* ========================================================
    8. HERO
@@ -1317,13 +1325,13 @@ p  { color: var(--text-muted); line-height: 1.75; }
   .international__inner { grid-template-columns: 1fr; }
   .europe-map { display: none; }
   .contact__inner { grid-template-columns: 1fr; }
+  .nav__links { display: none; }
+  .nav__hamburger { display: flex; }
+  .nav__actions .btn-primary { display: none; }
 }
 
 @media (max-width: 768px) {
   :root { --nav-height: 60px; }
-
-  .nav__links { display: none; }
-  .nav__hamburger { display: flex; }
 
   .grid-2 { grid-template-columns: 1fr; }
   .grid-3 { grid-template-columns: 1fr; }
@@ -1336,8 +1344,8 @@ p  { color: var(--text-muted); line-height: 1.75; }
 
   .form-row { grid-template-columns: 1fr; }
 
-  .floating-cta span { display: none; }
-  .floating-cta { padding: 1rem; width: 56px; height: 56px; justify-content: center; }
+  .floating-cta span:last-child { display: none; }
+  .floating-cta { padding: 1rem; width: 56px; height: 56px; justify-content: center; font-size: 1.3rem; }
 
   .hero__ctas { flex-direction: column; }
   .hero__ctas .btn { text-align: center; justify-content: center; }
