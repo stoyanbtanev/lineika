@@ -85,7 +85,7 @@ function applyLanguage(lang) {
   // Update lang button display
   const langBtnText = document.getElementById('lang-btn-text');
   if (langBtnText) {
-    langBtnText.textContent = `${t.lang_flag} ${t.lang_code.toUpperCase()}`;
+    langBtnText.innerHTML = `<span class="lang-flag lang-flag--${lang}" aria-hidden="true"></span><span class="lang-code">${t.lang_code.toUpperCase()}</span>`;
   }
 }
 
